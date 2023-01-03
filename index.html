@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACHUMBA</title>
+</head>
+<body>
+    <main class="main">
+        <h1 class="title">
+            Ваш Король - ACHUMBA
+        </h1>
+        <div class="links">
+            <a href=""></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">YOUTUBE</a>
+            <a href=""></a>
+        </div>
+    </main>
+</body>
+
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url("scala.jpg") center center;
+        height: 100vh;
+    }
+    .links {
+        margin-top: 200px;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .links > a:nth-child(2) {
+        color: red;
+        text-decoration: none;
+        padding: 60px;
+        border-radius: 10px;
+        background-color: rgb(14, 211, 14);
+        transition: .6s;
+    }
+    .links > a:nth-child(2):hover {
+        color: rgb(14, 211, 14);
+        transition: .6s;
+        background-color: red;
+    }
+    .title {
+        font-size: 60px;
+        margin-top: 300px;
+        animation: title .3s infinite;
+    }
+    @keyframes title {
+        from {
+            color: red;
+        }
+
+        to {
+            color: yellow;
+        }
+    }
+</style>
+</html>
